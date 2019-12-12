@@ -1,0 +1,1955 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DCD3C76A-3E1B-41F9-9CB7-702C2298F1F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SYS.FORMS</RootNamespace>
+    <AssemblyName>SYS.FORMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ACBrFramework.Net">
+      <HintPath>..\..\IMPORTACOES\ACBrFramework.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v15.1.Win, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v15.1.UI, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.1.UI, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.1.UI, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.1.Wizard, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v15.1.Presets, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v15.1.Win, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v15.1.Extensions, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.1.Extensions, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Input.Manipulations" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cadastros\Configuracao\FEmpresa_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Configuracao\FEmpresa_Busca.Designer.cs">
+      <DependentUpon>FEmpresa_Busca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Configuracao\FEmpresa_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Configuracao\FEmpresa_Cadastro.Designer.cs">
+      <DependentUpon>FEmpresa_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Configuracao\FUsuario_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Configuracao\FUsuario_Busca.Designer.cs">
+      <DependentUpon>FUsuario_Busca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Configuracao\FUsuario_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Configuracao\FUsuario_Cadastro.Designer.cs">
+      <DependentUpon>FUsuario_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Estoque\FDepartamento_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Estoque\FDepartamento_Busca.Designer.cs">
+      <DependentUpon>FDepartamento_Busca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Estoque\FDepartamento_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Estoque\FDepartamento_Cadastro.Designer.cs">
+      <DependentUpon>FDepartamento_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Estoque\FGrupo_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Estoque\FGrupo_Busca.Designer.cs">
+      <DependentUpon>FGrupo_Busca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Estoque\FGrupo_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Estoque\FGrupo_Cadastro.Designer.cs">
+      <DependentUpon>FGrupo_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Estoque\FMarca_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Estoque\FMarca_Busca.Designer.cs">
+      <DependentUpon>FMarca_Busca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Estoque\FMarca_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Estoque\FMarca_Cadastro.Designer.cs">
+      <DependentUpon>FMarca_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Estoque\FProduto_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Estoque\FProduto_Busca.Designer.cs">
+      <DependentUpon>FProduto_Busca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Estoque\FProduto_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Estoque\FProduto_Cadastro.Designer.cs">
+      <DependentUpon>FProduto_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Financeiro\FCCusto_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Financeiro\FCCusto_Busca.Designer.cs">
+      <DependentUpon>FCCusto_Busca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Financeiro\FCCusto_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Financeiro\FCCusto_Cadastro.Designer.cs">
+      <DependentUpon>FCCusto_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Financeiro\FCondicaoPagamento_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Financeiro\FCondicaoPagamento_Busca.Designer.cs">
+      <DependentUpon>FCondicaoPagamento_Busca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Financeiro\FCondicaoPagamento_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Financeiro\FCondicaoPagamento_Cadastro.Designer.cs">
+      <DependentUpon>FCondicaoPagamento_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Fiscal\FTributo_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Fiscal\FTributo_Busca.Designer.cs">
+      <DependentUpon>FTributo_Busca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Fiscal\FTributo_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Fiscal\FTributo_Cadastro.Designer.cs">
+      <DependentUpon>FTributo_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Gourmet\FAmbiente_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Gourmet\FAmbiente_Busca.Designer.cs">
+      <DependentUpon>FAmbiente_Busca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Gourmet\FAmbiente_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Gourmet\FAmbiente_Cadastro.Designer.cs">
+      <DependentUpon>FAmbiente_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Gourmet\FImpressora_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Gourmet\FImpressora_Busca.Designer.cs">
+      <DependentUpon>FImpressora_Busca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Gourmet\FImpressora_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Gourmet\FImpressora_Cadastro.Designer.cs">
+      <DependentUpon>FImpressora_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Gourmet\FMesa_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Gourmet\FMesa_Busca.Designer.cs">
+      <DependentUpon>FMesa_Busca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Gourmet\FMesa_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Gourmet\FMesa_Cadastro.Designer.cs">
+      <DependentUpon>FMesa_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Relacionamento\FClifor_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Relacionamento\FClifor_Busca.Designer.cs">
+      <DependentUpon>FClifor_Busca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Relacionamento\FClifor_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Relacionamento\FClifor_Cadastro.Designer.cs">
+      <DependentUpon>FClifor_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Relacionamento\FEndereco_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Relacionamento\FEndereco_Busca.Designer.cs">
+      <DependentUpon>FEndereco_Busca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Relacionamento\FEndereco_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Relacionamento\FEndereco_Cadastro.Designer.cs">
+      <DependentUpon>FEndereco_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAutenticacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAutenticacao.Designer.cs">
+      <DependentUpon>FAutenticacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBase.Designer.cs">
+      <DependentUpon>FBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBase_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBase_Cadastro.Designer.cs">
+      <DependentUpon>FBase_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBase_CadastroBusca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBase_CadastroBusca.Designer.cs">
+      <DependentUpon>FBase_CadastroBusca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMenu.Designer.cs">
+      <DependentUpon>FMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Comercial\FPDV_Contagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Comercial\FPDV_Contagem.Designer.cs">
+      <DependentUpon>FPDV_Contagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Comercial\FPDV_DescontoAcrescimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Comercial\FPDV_DescontoAcrescimo.Designer.cs">
+      <DependentUpon>FPDV_DescontoAcrescimo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Comercial\FPontodeVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Comercial\FPontodeVenda.Designer.cs">
+      <DependentUpon>FPontodeVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Estoque\FPreco_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Estoque\FPreco_Busca.Designer.cs">
+      <DependentUpon>FPreco_Busca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Estoque\FPreco_Lancamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Estoque\FPreco_Lancamento.Designer.cs">
+      <DependentUpon>FPreco_Lancamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Financeiro\FAberturaCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Financeiro\FAberturaCaixa.Designer.cs">
+      <DependentUpon>FAberturaCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Financeiro\FCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Financeiro\FCaixa.Designer.cs">
+      <DependentUpon>FCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Financeiro\FContas_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Financeiro\FContas_Busca.Designer.cs">
+      <DependentUpon>FContas_Busca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Financeiro\FContas_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Financeiro\FContas_Cadastro.Designer.cs">
+      <DependentUpon>FContas_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Fiscal\FCertificadoDigital_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Fiscal\FCertificadoDigital_Cadastro.Designer.cs">
+      <DependentUpon>FCertificadoDigital_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Fiscal\FComunicadorFiscal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Fiscal\FComunicadorFiscal.Designer.cs">
+      <DependentUpon>FComunicadorFiscal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Fiscal\FComunicadorFiscal_Processamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Fiscal\FComunicadorFiscal_Processamento.Designer.cs">
+      <DependentUpon>FComunicadorFiscal_Processamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Fiscal\FComunicadorFiscal_Receber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Fiscal\FComunicadorFiscal_Receber.Designer.cs">
+      <DependentUpon>FComunicadorFiscal_Receber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FLancamento_Balanca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FLancamento_Balanca.Designer.cs">
+      <DependentUpon>FLancamento_Balanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FComplementos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FComplementos.Designer.cs">
+      <DependentUpon>FComplementos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FConsulta_Cartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FConsulta_Cartao.Designer.cs">
+      <DependentUpon>FConsulta_Cartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FCPF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FCPF.Designer.cs">
+      <DependentUpon>FCPF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FFechamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FFechamento.Designer.cs">
+      <DependentUpon>FFechamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FMotivoCancelamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FMotivoCancelamento.Designer.cs">
+      <DependentUpon>FMotivoCancelamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FPedido.Designer.cs">
+      <DependentUpon>FPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Comercial\FPDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Comercial\FPDV.Designer.cs">
+      <DependentUpon>FPDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFiltro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFiltro.Designer.cs">
+      <DependentUpon>FFiltro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FCartoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FCartoes.Designer.cs">
+      <DependentUpon>FCartoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FMesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FMesas.Designer.cs">
+      <DependentUpon>FMesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FNotaFiscal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FNotaFiscal.Designer.cs">
+      <DependentUpon>FNotaFiscal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FTp_Cartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FTp_Cartao.Designer.cs">
+      <DependentUpon>FTp_Cartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FTransferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FTransferencia.Designer.cs">
+      <DependentUpon>FTransferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FUnir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FUnir.Designer.cs">
+      <DependentUpon>FUnir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FValor_Pago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lancamentos\Gourmet\FValor_Pago.Designer.cs">
+      <DependentUpon>FValor_Pago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Comercial\DANFCE.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Comercial\DANFCE.Designer.cs">
+      <DependentUpon>DANFCE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Comercial\DANFE_HORIZONTAL.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Comercial\DANFE_HORIZONTAL.Designer.cs">
+      <DependentUpon>DANFE_HORIZONTAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Comercial\DANFE_VERTICAL.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Comercial\DANFE_VERTICAL.Designer.cs">
+      <DependentUpon>DANFE_VERTICAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Dashboard\FDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Dashboard\FDashboard.Designer.cs">
+      <DependentUpon>FDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Fiscal\RDANFCE.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Fiscal\RDANFCE.Designer.cs">
+      <DependentUpon>RDANFCE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\FRelancao_Venda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\FRelancao_Venda.Designer.cs">
+      <DependentUpon>FRelancao_Venda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\correios\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfce_pr_homologacao_autorizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfce_pr_homologacao_consultaChaveAcesso\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfce_pr_homologacao_consultaRecibo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfce_pr_homologacao_consultaStatusServico\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfce_pr_homologacao_inutilizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfce_pr_homologacao_registroEvento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfce_pr_producao_autorizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfce_pr_producao_consultaChaveAcesso\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfce_pr_producao_consultaRecibo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfce_pr_producao_consultaStatusServico\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfce_pr_producao_inutilizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfce_pr_producao_registroEvento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfe_pr_homologacao_autorizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfe_pr_homologacao_consultaCadastro\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfe_pr_homologacao_consultaChaveAcesso\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfe_pr_homologacao_consultaRecibo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfe_pr_homologacao_consultaStatusServico\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfe_pr_homologacao_inutilizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfe_pr_homologacao_registroEvento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfe_pr_producao_autorizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfe_pr_producao_consultaCadastro\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfe_pr_producao_consultaChaveAcesso\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfe_pr_producao_consultaRecibo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfe_pr_producao_consultaStatusServico\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfe_pr_producao_inutilizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\nfe_pr_producao_registroEvento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cadastros\Configuracao\FEmpresa_Busca.resx">
+      <DependentUpon>FEmpresa_Busca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Configuracao\FEmpresa_Cadastro.resx">
+      <DependentUpon>FEmpresa_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Configuracao\FUsuario_Busca.resx">
+      <DependentUpon>FUsuario_Busca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Configuracao\FUsuario_Cadastro.resx">
+      <DependentUpon>FUsuario_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Estoque\FDepartamento_Busca.resx">
+      <DependentUpon>FDepartamento_Busca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Estoque\FDepartamento_Cadastro.resx">
+      <DependentUpon>FDepartamento_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Estoque\FGrupo_Busca.resx">
+      <DependentUpon>FGrupo_Busca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Estoque\FGrupo_Cadastro.resx">
+      <DependentUpon>FGrupo_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Estoque\FMarca_Busca.resx">
+      <DependentUpon>FMarca_Busca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Estoque\FMarca_Cadastro.resx">
+      <DependentUpon>FMarca_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Estoque\FProduto_Busca.resx">
+      <DependentUpon>FProduto_Busca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Estoque\FProduto_Cadastro.resx">
+      <DependentUpon>FProduto_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Financeiro\FCCusto_Busca.resx">
+      <DependentUpon>FCCusto_Busca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Financeiro\FCCusto_Cadastro.resx">
+      <DependentUpon>FCCusto_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Financeiro\FCondicaoPagamento_Busca.resx">
+      <DependentUpon>FCondicaoPagamento_Busca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Financeiro\FCondicaoPagamento_Cadastro.resx">
+      <DependentUpon>FCondicaoPagamento_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Fiscal\FTributo_Busca.resx">
+      <DependentUpon>FTributo_Busca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Fiscal\FTributo_Cadastro.resx">
+      <DependentUpon>FTributo_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Gourmet\FAmbiente_Busca.resx">
+      <DependentUpon>FAmbiente_Busca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Gourmet\FAmbiente_Cadastro.resx">
+      <DependentUpon>FAmbiente_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Gourmet\FImpressora_Busca.resx">
+      <DependentUpon>FImpressora_Busca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Gourmet\FImpressora_Cadastro.resx">
+      <DependentUpon>FImpressora_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Gourmet\FMesa_Busca.resx">
+      <DependentUpon>FMesa_Busca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Gourmet\FMesa_Cadastro.resx">
+      <DependentUpon>FMesa_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Relacionamento\FClifor_Busca.resx">
+      <DependentUpon>FClifor_Busca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Relacionamento\FClifor_Cadastro.resx">
+      <DependentUpon>FClifor_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Relacionamento\FEndereco_Busca.resx">
+      <DependentUpon>FEndereco_Busca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Relacionamento\FEndereco_Cadastro.resx">
+      <DependentUpon>FEndereco_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAutenticacao.resx">
+      <DependentUpon>FAutenticacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBase.resx">
+      <DependentUpon>FBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBase_Cadastro.resx">
+      <DependentUpon>FBase_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBase_CadastroBusca.resx">
+      <DependentUpon>FBase_CadastroBusca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMenu.resx">
+      <DependentUpon>FMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Comercial\FPDV_Contagem.resx">
+      <DependentUpon>FPDV_Contagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Comercial\FPDV_DescontoAcrescimo.resx">
+      <DependentUpon>FPDV_DescontoAcrescimo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Comercial\FPontodeVenda.resx">
+      <DependentUpon>FPontodeVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Estoque\FPreco_Busca.resx">
+      <DependentUpon>FPreco_Busca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Estoque\FPreco_Lancamento.resx">
+      <DependentUpon>FPreco_Lancamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Financeiro\FAberturaCaixa.resx">
+      <DependentUpon>FAberturaCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Financeiro\FCaixa.resx">
+      <DependentUpon>FCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Financeiro\FContas_Busca.resx">
+      <DependentUpon>FContas_Busca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Financeiro\FContas_Cadastro.resx">
+      <DependentUpon>FContas_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Fiscal\FCertificadoDigital_Cadastro.resx">
+      <DependentUpon>FCertificadoDigital_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Fiscal\FComunicadorFiscal.resx">
+      <DependentUpon>FComunicadorFiscal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Fiscal\FComunicadorFiscal_Processamento.resx">
+      <DependentUpon>FComunicadorFiscal_Processamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Fiscal\FComunicadorFiscal_Receber.resx">
+      <DependentUpon>FComunicadorFiscal_Receber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Gourmet\FLancamento_Balanca.resx">
+      <DependentUpon>FLancamento_Balanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Gourmet\FComplementos.resx">
+      <DependentUpon>FComplementos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Gourmet\FConsulta_Cartao.resx">
+      <DependentUpon>FConsulta_Cartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Gourmet\FCPF.resx">
+      <DependentUpon>FCPF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Gourmet\FFechamento.resx">
+      <DependentUpon>FFechamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Gourmet\FMotivoCancelamento.resx">
+      <DependentUpon>FMotivoCancelamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Gourmet\FPedido.resx">
+      <DependentUpon>FPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Comercial\FPDV.resx">
+      <DependentUpon>FPDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFiltro.resx">
+      <DependentUpon>FFiltro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Gourmet\FCartoes.resx">
+      <DependentUpon>FCartoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Gourmet\FMesas.resx">
+      <DependentUpon>FMesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Gourmet\FTp_Cartao.resx">
+      <DependentUpon>FTp_Cartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Gourmet\FTransferencia.resx">
+      <DependentUpon>FTransferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Gourmet\FUnir.resx">
+      <DependentUpon>FUnir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lancamentos\Gourmet\FValor_Pago.resx">
+      <DependentUpon>FValor_Pago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Comercial\DANFCE.resx">
+      <DependentUpon>DANFCE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Dashboard\FDashboard.resx">
+      <DependentUpon>FDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Fiscal\RDANFCE.resx">
+      <DependentUpon>RDANFCE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\FRelancao_Venda.resx">
+      <DependentUpon>FRelancao_Venda.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\SYS.QUERYS.Cadastros.Estoque.QProduto+MProduto.datasource" />
+    <None Include="Properties\DataSources\SYS.QUERYS.Lancamentos.Gourmet.MComplemento.datasource" />
+    <None Include="Properties\DataSources\SYS.QUERYS.TB_FAT_NOTA_ITEM.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Relatorios\Comercial\ExtratoConsumo.frx" />
+    <None Include="Resources\Esquemas\consReciNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\consSitNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\consStatServ_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\enviNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\inutNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\leiauteConsSitNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\leiauteConsStatServ_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\leiauteInutNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\leiauteNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\nfe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\procInutNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\procNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\retConsReciNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\retConsSitNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\retConsStatServ_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\retEnviNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\retInutNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\tiposBasico_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Esquemas\xmldsig-core-schema_v1.01.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\correios\assuntoPIMaster.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\correios\AtendeClienteService.wsdl" />
+    <None Include="Web References\correios\clienteERP.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\correios\contratoERP.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\correios\embalagemLRSMaster.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\correios\enderecoERP.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\correios\mensagemRetornoPIMaster.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\correios\motivoPIMaster.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\correios\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\correios\retorno.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\correios\retornoCancelamentoTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\correios\servicoERP.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\correios\statusCartao.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\nfce_pr_homologacao_autorizacao\NFeAutorizacao3.wsdl" />
+    <None Include="Web References\nfce_pr_homologacao_autorizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfce_pr_homologacao_consultaChaveAcesso\NFeConsulta3.wsdl" />
+    <None Include="Web References\nfce_pr_homologacao_consultaChaveAcesso\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfce_pr_homologacao_consultaRecibo\NFeRetAutorizacao3.wsdl" />
+    <None Include="Web References\nfce_pr_homologacao_consultaRecibo\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfce_pr_homologacao_consultaStatusServico\NFeStatusServico3.wsdl" />
+    <None Include="Web References\nfce_pr_homologacao_consultaStatusServico\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfce_pr_homologacao_inutilizacao\NFeInutilizacao3.wsdl" />
+    <None Include="Web References\nfce_pr_homologacao_inutilizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfce_pr_homologacao_registroEvento\NFeRecepcaoEvento.wsdl" />
+    <None Include="Web References\nfce_pr_homologacao_registroEvento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfce_pr_producao_autorizacao\NFeAutorizacao3.wsdl" />
+    <None Include="Web References\nfce_pr_producao_autorizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfce_pr_producao_consultaChaveAcesso\NFeConsulta3.wsdl" />
+    <None Include="Web References\nfce_pr_producao_consultaChaveAcesso\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfce_pr_producao_consultaRecibo\NFeRetAutorizacao3.wsdl" />
+    <None Include="Web References\nfce_pr_producao_consultaRecibo\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfce_pr_producao_consultaStatusServico\NFeStatusServico3.wsdl" />
+    <None Include="Web References\nfce_pr_producao_consultaStatusServico\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfce_pr_producao_inutilizacao\NFeInutilizacao3.wsdl" />
+    <None Include="Web References\nfce_pr_producao_inutilizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfce_pr_producao_registroEvento\NFeRecepcaoEvento.wsdl" />
+    <None Include="Web References\nfce_pr_producao_registroEvento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfe_pr_homologacao_autorizacao\NFeAutorizacao3.wsdl" />
+    <None Include="Web References\nfe_pr_homologacao_autorizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfe_pr_homologacao_consultaCadastro\CadConsultaCadastro2.wsdl" />
+    <None Include="Web References\nfe_pr_homologacao_consultaCadastro\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfe_pr_homologacao_consultaChaveAcesso\NFeConsulta3.wsdl" />
+    <None Include="Web References\nfe_pr_homologacao_consultaChaveAcesso\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfe_pr_homologacao_consultaRecibo\NFeRetAutorizacao3.wsdl" />
+    <None Include="Web References\nfe_pr_homologacao_consultaRecibo\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfe_pr_homologacao_consultaStatusServico\NFeStatusServico3.wsdl" />
+    <None Include="Web References\nfe_pr_homologacao_consultaStatusServico\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfe_pr_homologacao_inutilizacao\NFeInutilizacao3.wsdl" />
+    <None Include="Web References\nfe_pr_homologacao_inutilizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfe_pr_homologacao_registroEvento\NFeRecepcaoEvento.wsdl" />
+    <None Include="Web References\nfe_pr_homologacao_registroEvento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfe_pr_producao_autorizacao\NFeAutorizacao3.wsdl" />
+    <None Include="Web References\nfe_pr_producao_autorizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfe_pr_producao_consultaCadastro\CadConsultaCadastro2.wsdl" />
+    <None Include="Web References\nfe_pr_producao_consultaCadastro\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfe_pr_producao_consultaChaveAcesso\NFeConsulta3.wsdl" />
+    <None Include="Web References\nfe_pr_producao_consultaChaveAcesso\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfe_pr_producao_consultaRecibo\NFeRetAutorizacao3.wsdl" />
+    <None Include="Web References\nfe_pr_producao_consultaRecibo\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfe_pr_producao_consultaStatusServico\NFeStatusServico3.wsdl" />
+    <None Include="Web References\nfe_pr_producao_consultaStatusServico\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfe_pr_producao_inutilizacao\NFeInutilizacao3.wsdl" />
+    <None Include="Web References\nfe_pr_producao_inutilizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\nfe_pr_producao_registroEvento\NFeRecepcaoEvento.wsdl" />
+    <None Include="Web References\nfe_pr_producao_registroEvento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cadastros\Comercial\" />
+    <Folder Include="Cadastros\Producao\" />
+    <Folder Include="Lancamentos\Configuracao\" />
+    <Folder Include="Lancamentos\Producao\" />
+    <Folder Include="Lancamentos\Relacionamento\" />
+    <Folder Include="Relatorios\Dashboard\Configuracao\" />
+    <Folder Include="Relatorios\Estoque\" />
+    <Folder Include="Relatorios\Financeiro\" />
+    <Folder Include="Relatorios\Gourmet\" />
+    <Folder Include="Relatorios\Producao\" />
+    <Folder Include="Relatorios\Relacionamento\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SYS.QUERYS\SYS.QUERYS.csproj">
+      <Project>{a5d558d5-f147-4ab4-a298-1e09e723e925}</Project>
+      <Name>SYS.QUERYS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SYS.UTILS\SYS.UTILS.csproj">
+      <Project>{555a3325-7ec1-4d25-8f6f-f93952a8ba74}</Project>
+      <Name>SYS.UTILS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\SYS.QUERYS.Lancamentos.Gourmet.ListaPedidoItem.datasource" />
+    <None Include="Properties\DataSources\SYS.QUERYS.Lancamentos.Gourmet.MPedido.datasource" />
+    <None Include="Properties\DataSources\SYS.QUERYS.Lancamentos.Gourmet.MPedidoItem.datasource" />
+    <None Include="Properties\DataSources\SYS.QUERYS.TB_EST_GRUPO_ADICIONAI.datasource" />
+    <None Include="Resources\add_x12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_down_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_up_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode_x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode_x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_circle_blue_x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_circle_blue_x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier_add2_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier_add2_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier_add2_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier_banknote_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier_delete2_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier_delete2_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier_ok2_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier_ok2_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier_ok2_x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier_remove2_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier_remove2_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier_remove2_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier_x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier_x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\certificate_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check_x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contract_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit_card_front_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit_card_front_x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_ok2_x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers_x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_check_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_update_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_text_add2_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employees_arrow_updown_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employees_arrow_updown_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employees_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\execute_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\execute_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_x8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_x12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_blue_x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_green_x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_red_x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full_screen_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full_screen_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full_screen_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graph_sales_add2_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graph_sales_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graph_sales_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graph_sales_x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet_upload_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_banknote_add2_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_banknote_add2_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_banknote_remove2_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_banknote_remove2_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order_banknote_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order_delay_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order_export_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order_import_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order_internet_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order_ok2_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order_query_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\percentage_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\percentage_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\percentage_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_update_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_update_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload_rotate_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload_rotate_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload_rotate_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_x12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_database_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipment_banknote_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipment_info_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipment_info_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipment_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipment_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipment_x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipment_x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_bag_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_add2_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_add2_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_ok2_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_ok2_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\social_facebook_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touch_mode_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touch_mode_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transport_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_bin_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_group_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_symbol_blue_ok2_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_symbol_blue_update_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_symbol_blue_update_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_symbol_blue_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_panel_bottom_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_panel_bottom_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WALSAT_ERP_LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit_card_front_ok2_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit_card_ok2_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit_card_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipment_banknote_x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_update_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order_x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit_card_ok2_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit_card_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_green_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_red_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_blue_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_left_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_right_x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://apps.correios.com.br/SigepMasterJPA/AtendeClienteService/AtendeCliente%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\correios\</RelPath>
+      <UpdateFromURL>https://apps.correios.com.br/SigepMasterJPA/AtendeClienteService/AtendeCliente%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_correios_AtendeClienteService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeAutorizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfce_pr_homologacao_autorizacao\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeAutorizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfce_pr_homologacao_autorizacao_NfeAutorizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeConsulta3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfce_pr_homologacao_consultaChaveAcesso\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeConsulta3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfce_pr_homologacao_consultaChaveAcesso_NfeConsulta3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeInutilizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfce_pr_homologacao_inutilizacao\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeInutilizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfce_pr_homologacao_inutilizacao_NfeInutilizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeRecepcaoEvento%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfce_pr_homologacao_registroEvento\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeRecepcaoEvento%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfce_pr_homologacao_registroEvento_RecepcaoEvento</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeRetAutorizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfce_pr_homologacao_consultaRecibo\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeRetAutorizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfce_pr_homologacao_consultaRecibo_NfeRetAutorizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeStatusServico3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfce_pr_homologacao_consultaStatusServico\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeStatusServico3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfce_pr_homologacao_consultaStatusServico_NfeStatusServico3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfe.fazenda.pr.gov.br/nfe/CadConsultaCadastro2%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfe_pr_homologacao_consultaCadastro\</RelPath>
+      <UpdateFromURL>https://homologacao.nfe.fazenda.pr.gov.br/nfe/CadConsultaCadastro2%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfe_pr_homologacao_consultaCadastro_CadConsultaCadastro2</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfe.fazenda.pr.gov.br/nfe/NFeAutorizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfe_pr_homologacao_autorizacao\</RelPath>
+      <UpdateFromURL>https://homologacao.nfe.fazenda.pr.gov.br/nfe/NFeAutorizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfe_pr_homologacao_autorizacao_NfeAutorizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfe.fazenda.pr.gov.br/nfe/NFeConsulta3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfe_pr_homologacao_consultaChaveAcesso\</RelPath>
+      <UpdateFromURL>https://homologacao.nfe.fazenda.pr.gov.br/nfe/NFeConsulta3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfe_pr_homologacao_consultaChaveAcesso_NfeConsulta3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfe.fazenda.pr.gov.br/nfe/NFeInutilizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfe_pr_homologacao_inutilizacao\</RelPath>
+      <UpdateFromURL>https://homologacao.nfe.fazenda.pr.gov.br/nfe/NFeInutilizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfe_pr_homologacao_inutilizacao_NfeInutilizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfe.fazenda.pr.gov.br/nfe/NFeRecepcaoEvento%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfe_pr_homologacao_registroEvento\</RelPath>
+      <UpdateFromURL>https://homologacao.nfe.fazenda.pr.gov.br/nfe/NFeRecepcaoEvento%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfe_pr_homologacao_registroEvento_RecepcaoEvento</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfe.fazenda.pr.gov.br/nfe/NFeRetAutorizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfe_pr_homologacao_consultaRecibo\</RelPath>
+      <UpdateFromURL>https://homologacao.nfe.fazenda.pr.gov.br/nfe/NFeRetAutorizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfe_pr_homologacao_consultaRecibo_NfeRetAutorizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfe.fazenda.pr.gov.br/nfe/NFeStatusServico3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfe_pr_homologacao_consultaStatusServico\</RelPath>
+      <UpdateFromURL>https://homologacao.nfe.fazenda.pr.gov.br/nfe/NFeStatusServico3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfe_pr_homologacao_consultaStatusServico_NfeStatusServico3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.fazenda.pr.gov.br/nfce/NFeAutorizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfce_pr_producao_autorizacao\</RelPath>
+      <UpdateFromURL>https://nfce.fazenda.pr.gov.br/nfce/NFeAutorizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfce_pr_producao_autorizacao_NfeAutorizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.fazenda.pr.gov.br/nfce/NFeConsulta3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfce_pr_producao_consultaChaveAcesso\</RelPath>
+      <UpdateFromURL>https://nfce.fazenda.pr.gov.br/nfce/NFeConsulta3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfce_pr_producao_consultaChaveAcesso_NfeConsulta3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.fazenda.pr.gov.br/nfce/NFeInutilizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfce_pr_producao_inutilizacao\</RelPath>
+      <UpdateFromURL>https://nfce.fazenda.pr.gov.br/nfce/NFeInutilizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfce_pr_producao_inutilizacao_NfeInutilizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.fazenda.pr.gov.br/nfce/NFeRecepcaoEvento%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfce_pr_producao_registroEvento\</RelPath>
+      <UpdateFromURL>https://nfce.fazenda.pr.gov.br/nfce/NFeRecepcaoEvento%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfce_pr_producao_registroEvento_RecepcaoEvento</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.fazenda.pr.gov.br/nfce/NFeRetAutorizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfce_pr_producao_consultaRecibo\</RelPath>
+      <UpdateFromURL>https://nfce.fazenda.pr.gov.br/nfce/NFeRetAutorizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfce_pr_producao_consultaRecibo_NfeRetAutorizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.fazenda.pr.gov.br/nfce/NFeStatusServico3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfce_pr_producao_consultaStatusServico\</RelPath>
+      <UpdateFromURL>https://nfce.fazenda.pr.gov.br/nfce/NFeStatusServico3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfce_pr_producao_consultaStatusServico_NfeStatusServico3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfe.fazenda.pr.gov.br/nfe/CadConsultaCadastro2%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfe_pr_producao_consultaCadastro\</RelPath>
+      <UpdateFromURL>https://nfe.fazenda.pr.gov.br/nfe/CadConsultaCadastro2%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfe_pr_producao_consultaCadastro_CadConsultaCadastro2</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfe.fazenda.pr.gov.br/nfe/NFeAutorizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfe_pr_producao_autorizacao\</RelPath>
+      <UpdateFromURL>https://nfe.fazenda.pr.gov.br/nfe/NFeAutorizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfe_pr_producao_autorizacao_NfeAutorizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfe.fazenda.pr.gov.br/nfe/NFeConsulta3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfe_pr_producao_consultaChaveAcesso\</RelPath>
+      <UpdateFromURL>https://nfe.fazenda.pr.gov.br/nfe/NFeConsulta3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfe_pr_producao_consultaChaveAcesso_NfeConsulta3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfe.fazenda.pr.gov.br/nfe/NFeInutilizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfe_pr_producao_inutilizacao\</RelPath>
+      <UpdateFromURL>https://nfe.fazenda.pr.gov.br/nfe/NFeInutilizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfe_pr_producao_inutilizacao_NfeInutilizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfe.fazenda.pr.gov.br/nfe/NFeRecepcaoEvento%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfe_pr_producao_registroEvento\</RelPath>
+      <UpdateFromURL>https://nfe.fazenda.pr.gov.br/nfe/NFeRecepcaoEvento%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfe_pr_producao_registroEvento_RecepcaoEvento</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfe.fazenda.pr.gov.br/nfe/NFeRetAutorizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfe_pr_producao_consultaRecibo\</RelPath>
+      <UpdateFromURL>https://nfe.fazenda.pr.gov.br/nfe/NFeRetAutorizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfe_pr_producao_consultaRecibo_NfeRetAutorizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfe.fazenda.pr.gov.br/nfe/NFeStatusServico3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\nfe_pr_producao_consultaStatusServico\</RelPath>
+      <UpdateFromURL>https://nfe.fazenda.pr.gov.br/nfe/NFeStatusServico3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SYS_FORMS_nfe_pr_producao_consultaStatusServico_NfeStatusServico3</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet_download_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tag_blue_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_down_x12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_x32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

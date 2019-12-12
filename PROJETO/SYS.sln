@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SYS", "SYS\SYS.csproj", "{774C7386-0E77-4ACD-A66E-E25E6F41041F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SYS.FORMS", "SYS.FORMS\SYS.FORMS.csproj", "{DCD3C76A-3E1B-41F9-9CB7-702C2298F1F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SYS.UTILS", "SYS.UTILS\SYS.UTILS.csproj", "{555A3325-7EC1-4D25-8F6F-F93952A8BA74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SYS.QUERYS", "SYS.QUERYS\SYS.QUERYS.csproj", "{A5D558D5-F147-4AB4-A298-1E09E723E925}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SYS\\SYS.csproj
+		SccProjectName1 = SYS
+		SccLocalPath1 = SYS
+		SccProjectUniqueName2 = SYS.FORMS\\SYS.FORMS.csproj
+		SccProjectName2 = SYS.FORMS
+		SccLocalPath2 = SYS.FORMS
+		SccProjectUniqueName3 = SYS.QUERYS\\SYS.QUERYS.csproj
+		SccProjectName3 = SYS.QUERYS
+		SccLocalPath3 = SYS.QUERYS
+		SccProjectUniqueName4 = SYS.UTILS\\SYS.UTILS.csproj
+		SccProjectName4 = SYS.UTILS
+		SccLocalPath4 = SYS.UTILS
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{774C7386-0E77-4ACD-A66E-E25E6F41041F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774C7386-0E77-4ACD-A66E-E25E6F41041F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774C7386-0E77-4ACD-A66E-E25E6F41041F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774C7386-0E77-4ACD-A66E-E25E6F41041F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCD3C76A-3E1B-41F9-9CB7-702C2298F1F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCD3C76A-3E1B-41F9-9CB7-702C2298F1F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCD3C76A-3E1B-41F9-9CB7-702C2298F1F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCD3C76A-3E1B-41F9-9CB7-702C2298F1F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{555A3325-7EC1-4D25-8F6F-F93952A8BA74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{555A3325-7EC1-4D25-8F6F-F93952A8BA74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{555A3325-7EC1-4D25-8F6F-F93952A8BA74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{555A3325-7EC1-4D25-8F6F-F93952A8BA74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5D558D5-F147-4AB4-A298-1E09E723E925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5D558D5-F147-4AB4-A298-1E09E723E925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5D558D5-F147-4AB4-A298-1E09E723E925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5D558D5-F147-4AB4-A298-1E09E723E925}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
